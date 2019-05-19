@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400|Sacramento');
 body {
     overflow-x: hidden;
-    font-family: 'Nunito', sans-serif;
+    
     color: #505962;
+}
+
+:root {
+    --black: #000;
+    --gray: #505962;
+    --white:#fff;
+    --pink: #e40475;
+    --green: #70ff94;
 }
 
 .offset:before {
@@ -15,14 +22,17 @@ body {
 /*---- Navigation ----*/
 .navbar {
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: .9rem; /* equal to 16px */
+    font-size: 1rem; /* equal to 16px */
     letter-spacing: .1rem;
-    background-color: rgba(0, 0, 0, 0.6)!important;
+    background-color: #fff !important;
+
 }
 
-.navbar-brand img {
-    height: 2rem;
+
+.navbar-brand {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+    color: #000 !important;
 }
 
 .navbar-nav li {
@@ -30,20 +40,20 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: var(--black);
     padding-top: .8rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0ed145;
+    color: var(--pink);
 }
 
 
 /*---- Landing Page ----*/
 .home-inner {
     background-image: url(img/code.jpg);
-    filter: opacity(90%)
+    filter: brightness(30%);
 }
 
 .caption {
@@ -52,40 +62,41 @@ body {
     position: absolute;
     top: 38%;
     z-index: 1;
-    color: #fff;
-
+    color: var(--white);
+    text-transform: uppercase;
 }
 
 .caption h1 {
-    font-size: 3.8rem; /* About 60 pixels*/
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem black;
+    text-shadow: 3px 3px 2px var(--pink);
     padding-bottom: 1rem;
 
 }
 
 .caption h3 {
+    font-weight: 700;
     font-size: 2rem;
-    text-shadow: .1rem .1rem .5rem #0ed145;
+    text-shadow: 2px 2px 1px var(--pink);
     padding-bottom: 1.6rem;
+
 }
 
 .btn-lg {
     border-width: medium;
-    padding: .6rem 1.3rem;
+    padding: .2rem 1.3rem;
     font-size: 1.1rem;
-    text-transform: uppercase;
 }
 
-hr {
-    width: 100%;
+.btn-lg:hover {
+  background: rgb(228,4,117);
+  background: linear-gradient(90deg, rgba(228,4,117,1) 0%, rgba(255,255,255,1) 100%);
 }
-
 
 /*---- About me Section ----*/
 #about img{
-    width: 60%;
+    width: 40%;
     margin-bottom: 2rem;
 }
 
@@ -101,16 +112,18 @@ hr {
 
 .btn-secondary {
     border-width: medium;
-    padding: .6rem 1.3rem;
+    padding: .2rem 1.3rem;
     font-size: 1.1rem;
-    color: black;
+    color: var(--gray);
     background-color: transparent;
     text-transform: uppercase;
     margin: 1rem;
 }
 
 .btn-secondary:hover {
-    background-color: #a9b2bb;
+    color: var(--gray);
+    background: rgb(228,4,117);
+    background: linear-gradient(90deg, rgba(228,4,117,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 /*---- Portfolio Section ----*/
@@ -129,16 +142,16 @@ h3.heading {
 
 .heading-underline {
     width: 3rem;
-    height: .09rem;
-    background-color: #0ed145;
+    height: .15rem;
+    background-color: var(--pink);
     margin: 0 auto 2rem;
 }
 
 
 /* Skills */
 .feature svg.svg-inline--fa {
-    color: #9cfc93;
-    margin-bottom: 3rem;
+    color: var(--green);
+    margin-bottom: 2.5rem;
 }
 
 .feature h3 {
@@ -154,7 +167,7 @@ h3.heading {
 .dark {
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
-    padding: 7rem 2rem;
+    padding: 3rem 1rem;
 }
 
 .fixed-background h3 {
@@ -165,15 +178,16 @@ h3.heading {
     margin-top: 1.5rem;
 }
 
-/* Footer Section */
-hr {
-    border-top: .05rem solid #1ebba3;
+/* Contact Section */
+.contact-icon {
+    margin: 1.5rem;
 }
 
+/* Footer Section */
 footer {
-    background-color: #40474e;
+    background-color: var(--black);
     color: white;
-    padding: 2rem 0 2rem;
+    padding-bottom: 1rem;
 }
 
 footer img {
@@ -186,25 +200,26 @@ footer a {
 }
 
 footer a:hover {
-    color: #0ed145;
+    color: var(--green);
 }
 
 footer p {
     margin-bottom: 0;
     font-size: 1.5rem;
-    color: #a9b2bb;
+    color: #bebebe;
 }
 
 footer svg.svg-inline--fa {
     font-size: 1.6rem;
     margin: 0 .5rem 0 0;
-
 }
 
-
-hr.socket {
-    border-top: .1rem solid #a9b2bb;
-    margin-top: 3rem;
+.socket {
+    margin: 0 0 .5rem;
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 204, 252, 0), var(--pink), rgba(255, 204, 252, 0));
 }
 
 /* Media Queries */
