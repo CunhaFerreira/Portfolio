@@ -1,13 +1,13 @@
 body {
     overflow-x: hidden;
-    
     color: #505962;
+    font-family: 'Nunito', sans-serif;
 }
 
 :root {
     --black: #000;
     --gray: #505962;
-    --white:#fff;
+    --white: #fff;
     --pink: #e40475;
     --green: #70ff94;
 }
@@ -22,31 +22,28 @@ body {
 /*---- Navigation ----*/
 .navbar {
     text-transform: uppercase;
-    font-size: 1rem; /* equal to 16px */
+    font-size: 1rem;
     letter-spacing: .1rem;
-    background-color: #fff !important;
-
 }
-
 
 .navbar-brand {
     font-family: 'Kanit', sans-serif;
     font-size: 1.8rem;
-    color: #000 !important;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px rgb(153, 152, 152);
 }
 
 .navbar-nav li {
     padding-right: .7rem;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: var(--black);
+.navbar-nav .nav-link {
     padding-top: .8rem;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--pink);
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--pink) !important;
 }
 
 
@@ -89,13 +86,13 @@ body {
     font-size: 1.1rem;
 }
 
-.btn-lg:hover {
-  background: rgb(228,4,117);
-  background: linear-gradient(90deg, rgba(228,4,117,1) 0%, rgba(255,255,255,1) 100%);
-}
+/* .btn-lg:hover {
+    background: rgb(228, 4, 117);
+    background: linear-gradient(90deg, rgba(228, 4, 117, 1) 0%, rgba(255, 255, 255, 1) 100%);
+} */
 
 /*---- About me Section ----*/
-#about img{
+#about img {
     width: 40%;
     margin-bottom: 2rem;
 }
@@ -120,11 +117,11 @@ body {
     margin: 1rem;
 }
 
-.btn-secondary:hover {
+/* .btn-secondary:hover {
     color: var(--gray);
-    background: rgb(228,4,117);
-    background: linear-gradient(90deg, rgba(228,4,117,1) 0%, rgba(255,255,255,1) 100%);
-}
+    background: rgb(228, 4, 117);
+    background: linear-gradient(90deg, rgba(228, 4, 117, 1) 0%, rgba(255, 255, 255, 1) 100%);
+} */
 
 /*---- Portfolio Section ----*/
 .jumbotron {
@@ -229,41 +226,26 @@ footer svg.svg-inline--fa {
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
+
     .caption h3 {
         font-size: 1.3rem;
         padding-bottom: 2.9rem;
     }
+
     .btn-lg {
         padding: .5rem 1rem;
         font-size: 1rem;
     }
+
     #about .narrow {
         width: 100%;
     }
+
     .narrow h1 {
         font-size: 1.8rem;
     }
+
     .narrow p {
         font-size: 1.1rem;
     }
 }
-
-
-/*============ BOOTSTRAP BREAK POINTS:
-
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
