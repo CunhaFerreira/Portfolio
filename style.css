@@ -8,8 +8,7 @@ body {
     --black: #000;
     --gray: #505962;
     --white: #fff;
-    --pink: #e40475;
-    --green: #70ff94;
+    --pink: rgb(255, 79, 79);
 }
 
 .offset:before {
@@ -26,11 +25,8 @@ body {
     letter-spacing: .1rem;
 }
 
-.navbar-brand {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.8rem;
-    text-transform: capitalize;
-    text-shadow: 2px 2px 5px rgb(153, 152, 152);
+.logo {
+    width: 3rem;
 }
 
 .navbar-nav li {
@@ -49,8 +45,8 @@ body {
 
 /*---- Landing Page ----*/
 .home-inner {
-    background-image: url(img/code.jpg);
-    filter: brightness(30%);
+    background-image: url(img/galaxy.jpg);
+    filter: brightness(65%);
 }
 
 .caption {
@@ -80,16 +76,6 @@ body {
 
 }
 
-.btn-lg {
-    border-width: medium;
-    padding: .2rem 1.3rem;
-    font-size: 1.1rem;
-}
-
-/* .btn-lg:hover {
-    background: rgb(228, 4, 117);
-    background: linear-gradient(90deg, rgba(228, 4, 117, 1) 0%, rgba(255, 255, 255, 1) 100%);
-} */
 
 /*---- About me Section ----*/
 #about img {
@@ -100,11 +86,6 @@ body {
 .narrow {
     width: 75%;
     margin: 1.5rem auto;
-    padding-top: 2rem;
-}
-
-.narrow h1 {
-    font-size: 2.4rem;
 }
 
 .btn-secondary {
@@ -117,11 +98,10 @@ body {
     margin: 1rem;
 }
 
-/* .btn-secondary:hover {
-    color: var(--gray);
-    background: rgb(228, 4, 117);
-    background: linear-gradient(90deg, rgba(228, 4, 117, 1) 0%, rgba(255, 255, 255, 1) 100%);
-} */
+.btn-secondary:hover {
+    color: var(--white);
+    background: linear-gradient(90deg, rgba(255,157,157,1) 0%, rgba(255,79,79,1) 100%);
+}
 
 /*---- Portfolio Section ----*/
 .jumbotron {
@@ -131,7 +111,7 @@ body {
 }
 
 h3.heading {
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.9rem;
@@ -147,23 +127,25 @@ h3.heading {
 
 /* Skills */
 .feature svg.svg-inline--fa {
-    color: var(--green);
     margin-bottom: 2.5rem;
+    color: #fd67cb;
 }
 
 .feature h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ff01aa;
 }
 
 .fixed {
-    background-image: url(img/coding.jpg);
+    background-image: url(img/code.jpg);
     z-index: -1;
 }
 
 .dark {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: var(--white);
     padding: 3rem 1rem;
 }
 
@@ -171,70 +153,41 @@ h3.heading {
     margin-bottom: 2rem;
 }
 
-.fixed-background p {
-    margin-top: 1.5rem;
+/* Contact Section */
+
+.social-icons {
+    color: var(--black);
 }
 
-/* Contact Section */
-.contact-icon {
-    margin: 1.5rem;
+.social-icons:hover {
+    color: var(--pink);
 }
+
+.social-icons svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1rem .5rem 0 0;
+}
+
 
 /* Footer Section */
 footer {
     background-color: var(--black);
-    color: white;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    color: var(--pink);
+    font-size: 1rem;
 }
 
-footer img {
-    height: 3rem;
-    margin: 1.5rem 0;
-}
-
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: var(--green);
-}
-
-footer p {
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    color: #bebebe;
-}
-
-footer svg.svg-inline--fa {
-    font-size: 1.6rem;
-    margin: 0 .5rem 0 0;
-}
-
-.socket {
-    margin: 0 0 .5rem;
-    width: 100%;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(255, 204, 252, 0), var(--pink), rgba(255, 204, 252, 0));
-}
 
 /* Media Queries */
 @media (max-width: 767px) {
     .caption h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
 
     .caption h3 {
         font-size: 1.3rem;
-        padding-bottom: 2.9rem;
-    }
-
-    .btn-lg {
-        padding: .5rem 1rem;
-        font-size: 1rem;
     }
 
     #about .narrow {
@@ -248,4 +201,44 @@ footer svg.svg-inline--fa {
     .narrow p {
         font-size: 1.1rem;
     }
+}
+
+
+/*============ CV Page Section =============*/
+
+header {
+    background-color: var(--pink);
+    padding: 2%;
+}
+
+.header-name {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.sub-header {
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.contact {
+    color: #000;
+    margin: 2%;
+}
+
+.contact i {
+    margin: 0 .5% 0 4%;
+}
+
+.title {
+    color: var(--pink);
+    margin: 0;
+    font-weight: 700;
+}
+
+.description {
+    width: 90%;
+    text-align: left;
+    line-height: 2;
 }
