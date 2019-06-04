@@ -1,12 +1,12 @@
 body {
     overflow-x: hidden;
-    color: #505962;
+    color: #2c2c2c;
     font-family: 'Nunito', sans-serif;
 }
 
 :root {
     --black: #000;
-    --gray: #505962;
+    --gray: #2c2c2c;
     --white: #fff;
     --pink: rgb(255, 79, 79);
 }
@@ -53,7 +53,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 38%;
+    top: 50%;
     z-index: 1;
     color: var(--white);
     text-transform: uppercase;
@@ -89,7 +89,7 @@ body {
 }
 
 .btn-secondary {
-    border-width: medium;
+    border: 1px solid var(--gray);
     padding: .2rem 1.3rem;
     font-size: 1.1rem;
     color: var(--gray);
@@ -99,7 +99,7 @@ body {
 }
 
 .btn-secondary:hover {
-    color: var(--white);
+    color: var(--gray);
     background: linear-gradient(90deg, rgba(255,157,157,1) 0%, rgba(255,79,79,1) 100%);
 }
 
@@ -128,14 +128,14 @@ h3.heading {
 /* Skills */
 .feature svg.svg-inline--fa {
     margin-bottom: 2.5rem;
-    color: #fd67cb;
+    color: var(--pink);
 }
 
 .feature h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px 2px #ff01aa;
+    text-shadow: 2px 2px 2px var(--pink);
 }
 
 .fixed {
@@ -153,7 +153,14 @@ h3.heading {
     margin-bottom: 2rem;
 }
 
-/* Contact Section */
+/* Footer Section */
+
+footer {
+    background-color: var(--white);
+    padding: 1rem;
+    color: var(--gray);
+    font-size: 1rem;
+}
 
 .social-icons {
     color: var(--black);
@@ -168,14 +175,11 @@ h3.heading {
     margin: 1rem .5rem 0 0;
 }
 
-
-/* Footer Section */
-footer {
-    background-color: var(--black);
-    padding: 1rem;
+.footer-p {
+    font-size: .8rem;
     color: var(--pink);
-    font-size: 1rem;
 }
+
 
 
 /* Media Queries */
@@ -201,44 +205,4 @@ footer {
     .narrow p {
         font-size: 1.1rem;
     }
-}
-
-
-/*============ CV Page Section =============*/
-
-header {
-    background-color: var(--pink);
-    padding: 2%;
-}
-
-.header-name {
-    font-size: 3.5rem;
-    color: var(--white);
-    margin-bottom: 0;
-}
-
-.sub-header {
-    color: var(--white);
-    font-size: 1.3rem;
-}
-
-.contact {
-    color: #000;
-    margin: 2%;
-}
-
-.contact i {
-    margin: 0 .5% 0 4%;
-}
-
-.title {
-    color: var(--pink);
-    margin: 0;
-    font-weight: 700;
-}
-
-.description {
-    width: 90%;
-    text-align: left;
-    line-height: 2;
 }
