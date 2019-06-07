@@ -104,17 +104,12 @@ body {
 }
 
 /*---- Portfolio Section ----*/
-.jumbotron {
-    margin-bottom: 0;
-    padding: 2rem 0 3.5rem;
-    border-radius: 0;
-}
-
-h3.heading {
+.heading {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.9rem;
+    letter-spacing: .5rem;
 }
 
 .heading-underline {
@@ -144,7 +139,7 @@ h3.heading {
 }
 
 .dark {
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.452);
     color: var(--white);
     padding: 3rem 1rem;
 }
@@ -157,9 +152,12 @@ h3.heading {
 
 footer {
     background-color: var(--white);
-    padding: 1rem;
     color: var(--gray);
     font-size: 1rem;
+}
+
+footer .narrow {
+    padding-bottom: 0;
 }
 
 .social-icons {
@@ -172,7 +170,7 @@ footer {
 
 .social-icons svg.svg-inline--fa {
     font-size: 1.6rem;
-    margin: 1rem .5rem 0 0;
+    margin: 1rem .5rem 1rem 0;
 }
 
 .footer-p {
