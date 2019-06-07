@@ -183,21 +183,23 @@ footer .narrow {
 /* Media Queries */
 @media (max-width: 767px) {
     .caption h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
 
     .caption h3 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
-    #about .narrow {
+    .narrow {
         width: 100%;
     }
 
-    .narrow h1 {
+
+    .heading {
         font-size: 1.8rem;
+        letter-spacing: 0;
     }
 
     .narrow p {
