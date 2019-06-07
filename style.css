@@ -104,7 +104,7 @@ body {
 }
 
 /*---- Portfolio Section ----*/
-#portfolio img:hover {
+#portfolio img {
     cursor: pointer;
 }
 
