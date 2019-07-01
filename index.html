@@ -41,7 +41,7 @@
                         <a href="#skill" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#footer" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -82,13 +82,12 @@
                 <br>
                 <br><em> *Below you will find the projects I built throughout the course as well as
                     additional projects while continuing my education. </em>
-                    <br>
+                <br>
                 <a href="link/Paola-CV.pdf" class="btn btn-secondary btn-md" target="_black">
                     Check out my CV
                 </a>
 
             </p>
-
         </div>
 
     </div>
@@ -96,7 +95,6 @@
 
     <!--- Start Portfolio Section -->
     <div id="portfolio" class="offset">
-        <!--- Start Jumbotron -->
 
         <div class="narrow text-center">
             <div class="col-12">
@@ -107,27 +105,60 @@
             <div class="row text-center">
 
                 <div class="project1 col-md-6">
-                    <img class="img-fluid rounded" src="img/tindog.PNG" data-toggle="modal" data-target="#project1"
-                        alt="">
+                    <div class="hovereffect">
+                        <img class="img-fluid rounded" src="img/groceryList.png" alt="Grocery List">
+                        <div class="overlay" data-toggle="modal" data-target="#project1">
+                            <p> <b>
+                                    <h2> From Udemy's course. </h2>
+                                </b>
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
+
                 <div class="project2 col-md-6">
-                    <img class="img-fluid rounded" src="img/memory.png" data-toggle="modal" data-target="#project2"
-                        alt="">
+                    <div class="hovereffect">
+                        <img class="img-fluid rounded" src="img/tindog.PNG" alt="Tindog Image">
+                        <div class="overlay" data-toggle="modal" data-target="#project2">
+                            <p> <b>
+                                    <h2> From Udemy's course. </h2>
+                                </b>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="project3 col-md-6">
-                    <img class="img-fluid rounded" src="img/pixel.png" data-toggle="modal" data-target="#project3"
-                        alt="">
+                    <div class="hovereffect">
+                        <img class="img-fluid rounded" src="img/memory.png" alt="Memory Game Image">
+                        <div class="overlay" data-toggle="modal" data-target="#project3">
+                            <p> <b>
+                                    <h2> From Udacity's course. </h2>
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project4 col-md-6">
+                    <div class="hovereffect">
+                        <img class="img-fluid rounded" src="img/pixel.png" alt="Pixel Maker Image">
+                        <div class="overlay" data-toggle="modal" data-target="#project4">
+                            <p> <b>
+                                    <h2> From Udacity's course. </h2>
+                                </b>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-        </div><!-- End Row -->
-
+        </div>
 
     </div>
-    <!--- End Narrow -->
-    </div>
-    <!--- End Jumbotron -->
+
     </div>
     <!--- End Portfolio Section -->
 
@@ -143,42 +174,49 @@
                     <div class="heading-underline"></div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="feature">
                         <h3>Html 5</h3>
                         <i class="fas fa-code fa-3x"></i>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="feature">
                         <h3>Css</h3>
                         <i class="fab fa-css3 fa-3x"></i>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="feature">
                         <h3>JavaScript</h3>
                         <i class="fab fa-js-square fa-3x"></i>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="feature">
                         <h3>Bootstrap</h3>
                         <i class="fas fa-bold fa-3x"></i>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="feature">
-                        <h3>Jquery</h3>
+                        <h3>jQuery</h3>
                         <i class="fas fa-dollar-sign fa-3x"></i>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
+                    <div class="feature">
+                        <h3>Angular JS</h3>
+                        <i class="fab fa-angular fa-3x"></i>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
                     <div class="feature">
                         <h3>Python</h3>
                         <i class="fab fa-python fa-3x"></i>
@@ -225,9 +263,31 @@
 
     <!-- Start Modal -->
 
-
     <!-- Modal Project1 -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-abelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Grocery List</h3>
+                </div>
+                <div class="modal-body">
+                    <p>This app was programmed using <b> AngularJS </b>.<br>
+                        <a href="https://cunhaferreira.github.io/GroceryList/#/" target="_blank">Web App</a> |
+                        <a href="https://github.com/CunhaFerreira/GroceryList/blob/master/index.html"
+                            target="_blank">See
+                            code</a>
+                    </p>
+                    <img class="img-fluid" src="img/groceryList.png" alt="Grocery List Screen">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn default" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Project2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-abelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -248,8 +308,8 @@
         </div>
     </div>
 
-    <!-- Modal Project2 -->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-abelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal Project3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-abelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -270,15 +330,15 @@
         </div>
     </div>
 
-    <!-- Modal Project3 -->
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-abelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal Project4 -->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-abelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3>Pixel Art Maker Project</h3>
                 </div>
                 <div class="modal-body">
-                    <p>This game was programmed using Jquery library. <br>
+                    <p>This game was programmed using <b> jQuery library. </b> <br>
                         <a href="https://cunhaferreira.github.io/PixelMaker/" target="_blank">Play Game</a> |
                         <a href="https://github.com/CunhaFerreira/PixelMaker/blob/master/index.html" target="_blank">See
                             code</a>
