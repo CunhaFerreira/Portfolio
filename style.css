@@ -19,8 +19,11 @@ body {
 }
 
 /*---- Navigation ----*/
-.navbar {
+.navbar-brand {
     text-transform: uppercase;
+    color: var(--pink) !important;
+}
+.navbar {
     font-size: 1rem;
     letter-spacing: .1rem;
 }
@@ -101,6 +104,10 @@ body {
 .btn-secondary:hover {
     color: var(--gray);
     background: linear-gradient(90deg, rgba(255, 157, 157, 1) 0%, rgba(255, 79, 79, 1) 100%);
+}
+
+hr {
+    width: 75%;
 }
 
 /*---- Portfolio Section ----*/
